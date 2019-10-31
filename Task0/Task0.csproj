@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICodec.cs" />
-    <Compile Include="ICodecFactory.cs" />
+    <Compile Include="Codecs\Interfaces\ICodec.cs" />
+    <Compile Include="Codecs\Factory\ICodecFactory.cs" />
     <Compile Include="MediaLibrary\Players\Interfaces\IPlayer.cs" />
     <Compile Include="MediaLibrary\MediaElements\Audio.cs" />
     <Compile Include="IElement.cs" />
@@ -54,14 +54,15 @@
     <Compile Include="MediaLibrary\MediaLibrary.cs" />
     <Compile Include="MediaLibrary\Playlists\MixedPlaylist.cs" />
     <Compile Include="MediaLibrary\Playlists\Playlist.cs" />
-    <Compile Include="Mp3Codec.cs" />
-    <Compile Include="Mp3CodecFactory.cs" />
-    <Compile Include="Mp4Codec.cs" />
+    <Compile Include="Codecs\Mp3Codec.cs" />
+    <Compile Include="Codecs\Factory\Mp3CodecFactory.cs" />
+    <Compile Include="Codecs\Mp4Codec.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MediaLibrary\MediaElements\Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
