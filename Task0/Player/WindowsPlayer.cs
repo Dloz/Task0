@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Task0.Codecs.Factory;
 
 namespace Task0.MediaLibrary.Players
 {
@@ -12,10 +13,7 @@ namespace Task0.MediaLibrary.Players
         {
             foreach (var element in mediaElements)
             {
-                if (element.FileExtension == ".mp3")
-                {
-                    new Mp3CodecFactory().Create().Process(element); // ???????????
-                }
+                new CodecFactory().CreateCodec(element.FileExtension).Process(element);
             }
         }
 

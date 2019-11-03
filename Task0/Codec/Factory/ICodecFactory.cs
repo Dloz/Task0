@@ -7,6 +7,6 @@ namespace Task0
 {
     public interface ICodecFactory
     {
-        ICodec Create();
+        ICodec CreateCodec(string fileExtension);
     }
 }

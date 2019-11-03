@@ -4,7 +4,7 @@
     <Position X="6" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Playlists\Playlist.cs</FileName>
+      <FileName>MediaLibrary\Playlist\Playlist.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -12,7 +12,7 @@
     <Position X="7.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Playlists\MixedPlaylist.cs</FileName>
+      <FileName>MediaLibrary\Playlist\MixedPlaylist.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -28,7 +28,7 @@
     <Position X="2" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAABAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\MediaElements\Video.cs</FileName>
+      <FileName>MediaLibrary\MediaElement\Video.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -36,7 +36,7 @@
     <Position X="3.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAABAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\MediaElements\Image.cs</FileName>
+      <FileName>MediaLibrary\MediaElement\Image.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -44,7 +44,7 @@
     <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAABAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\MediaElements\Audio.cs</FileName>
+      <FileName>MediaLibrary\MediaElement\Audio.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -52,7 +52,7 @@
     <Position X="8.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Players\WindowsPlayer.cs</FileName>
+      <FileName>Player\WindowsPlayer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -60,7 +60,7 @@
     <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Codecs\Mp3Codec.cs</FileName>
+      <FileName>Codec\Mp3Codec.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -68,15 +68,7 @@
     <Position X="2.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Codecs\Mp4Codec.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Task0.Mp3CodecFactory">
-    <Position X="5" Y="8.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Codecs\Factory\Mp3CodecFactory.cs</FileName>
+      <FileName>Codec\Mp4Codec.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -84,49 +76,49 @@
     <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IElement.cs</FileName>
+      <FileName>Common\IElement.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.IPlaylist">
     <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Playlists\Interfaces\IPlaylist.cs</FileName>
+      <FileName>MediaLibrary\Playlist\IPlaylist.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.IMediaLibrary">
     <Position X="0.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Interfaces\IMediaLibrary.cs</FileName>
+      <FileName>MediaLibrary\IMediaLibrary.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.IMediaElement">
     <Position X="3.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\MediaElements\Interfaces\IMediaElement.cs</FileName>
+      <FileName>MediaLibrary\MediaElement\IMediaElement.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.IPlayer">
     <Position X="8.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
-      <FileName>MediaLibrary\Players\Interfaces\IPlayer.cs</FileName>
+      <FileName>Player\IPlayer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.ICodec">
     <Position X="1.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Codecs\Interfaces\ICodec.cs</FileName>
+      <FileName>Codec\ICodec.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Task0.ICodecFactory">
     <Position X="5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Codecs\Factory\ICodecFactory.cs</FileName>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Codec\Factory\ICodecFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
